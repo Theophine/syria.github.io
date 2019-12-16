@@ -1,0 +1,89 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>hvPlot Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.2.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.2.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="037185cf-9485-41d9-be82-ca47856abb65"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4384">
+          {"45d27ee2-17b4-49d5-98f7-7802a32bd9bb":{"roots":{"references":[{"attributes":{},"id":"4357","type":"Selection"},{"attributes":{"source":{"id":"4356","type":"ColumnDataSource"}},"id":"4369","type":"CDSView"},{"attributes":{"callback":null,"data":{"Administration":["Hama","Idleb","Aleppo","Deir-ez-Zor","Homs","Ar-Raqqa","Al-Hasakeh","Damascus"],"Counts_of_attacks_in_the_Administration":[11732,10081,5936,3660,2201,1988,856,836]},"selected":{"id":"4357","type":"Selection"},"selection_policy":{"id":"4370","type":"UnionRenderers"}},"id":"4356","type":"ColumnDataSource"},{"attributes":{"columns":[{"id":"4360","type":"TableColumn"},{"id":"4365","type":"TableColumn"}],"height":300,"reorderable":false,"source":{"id":"4356","type":"ColumnDataSource"},"view":{"id":"4369","type":"CDSView"},"width":700},"id":"4368","type":"DataTable"},{"attributes":{"editor":{"id":"4359","type":"StringEditor"},"field":"Administration","formatter":{"id":"4358","type":"StringFormatter"},"title":"Administration"},"id":"4360","type":"TableColumn"},{"attributes":{},"id":"4363","type":"NumberFormatter"},{"attributes":{},"id":"4370","type":"UnionRenderers"},{"attributes":{},"id":"4364","type":"IntEditor"},{"attributes":{},"id":"4359","type":"StringEditor"},{"attributes":{},"id":"4358","type":"StringFormatter"},{"attributes":{"editor":{"id":"4364","type":"IntEditor"},"field":"Counts_of_attacks_in_the_Administration","formatter":{"id":"4363","type":"NumberFormatter"},"title":"Counts of attacks in the Administration"},"id":"4365","type":"TableColumn"}],"root_ids":["4368"]},"title":"Bokeh Application","version":"1.0.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4384').textContent;
+                  var render_items = [{"docid":"45d27ee2-17b4-49d5-98f7-7802a32bd9bb","roots":{"4368":"037185cf-9485-41d9-be82-ca47856abb65"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
